@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booksky App-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <div class="navbar">
+      <h1>Booksky</h1>
+    </div>
+    <!--Header-->
+    <div class="container">
+      <div class="box-container">
+        <h2>Rich Dad Poor Dad</h2>
+        <h4 style="text-align: right">-Robert</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quis, facilis ipsa repellat consequuntur at amet aut alias voluptates
+          iusto sequi consequatur accusantium, hic neque ullam aperiam quia,
+          minima velit!
+        </p>
+        <button id="delBtn" onclick="Delete(event)">Delete</button>
+      </div>
+    </div>
+    <button class="plus-btn">+</button>
+    <!-- Overlay-->
+    <div class="overlay"> </div>
+    <!-- popup-box-->
+    <div class="popup-box">
+        <h2 style="text-align: center;">Add Book</h2>
+        <input type="text" placeholder="Book Title" id="bookTitle">
+        <input type="text" placeholder="Book Author" id="bookAuthor">
+        <textarea placeholder="Short Description" id="bookDescription"></textarea>
+        <button id="addBtn">Add</button>
+        <button id="cancelBtn">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
